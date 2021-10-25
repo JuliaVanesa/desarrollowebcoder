@@ -1,0 +1,263 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    width: 100%;
+    height: 44px; 
+}
+
+.menu {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 28px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 224px;
+    background: #298E77;
+    transition: all 0.5s;
+    transform: translateX(-100%);
+    z-index: 3; 
+    }
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    /*display: block;*/
+    padding: 15px; 
+    }
+
+.btn-menu {
+    display: none; 
+    }
+
+label {
+    float: right;
+    margin: 10px; 
+    }
+
+.icon-cruz {
+    opacity: 0; 
+    }
+
+img {
+    margin: 10px; 
+    }
+
+.btn-menu:checked ~ .menu {
+    transform: translateX(0%); 
+    }
+
+.btn-menu:checked ~ .icon-cruz {
+    opacity: 1;
+    position: absolute;
+    right: 0; 
+    }
+
+.btn-menu:checked ~ .icon-burger {
+    opacity: 0; 
+    }
+
+.banner {
+    width: 100%;
+    position: relative; 
+    }
+
+.banner h1 {
+    font-family: IBM Plex Sans, sans-serif;
+    font-size: 36px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+    margin-left: 10px;
+    padding-top: 29px; 
+}
+
+.banner h1 span {
+    color: #736a96; 
+}
+
+.banner p {
+    font-family: IBM Plex Sans, sans-serif;
+    font-size: 14px;
+    color: #060A24;
+    width: 95%;
+    letter-spacing: 2px;
+    line-height: 22px;
+    margin-left: 10px;
+    margin-top: 16px; 
+    }
+
+.banner .buttonc {
+    background: #298E77;
+    display: block;
+    font-family: IBM Plex Mono, monospace;
+    font-size: 16px;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    width: 95%;
+    height: 48px;
+    padding-top: 15px;
+    margin-top: 36px;
+    margin-left: 50%;
+    transform: translate(-50%); 
+}
+.banner .buttonc:hover {
+    background: linear-gradient(to right, #298E77, #2DE3BA);
+    color: white; 
+}
+
+@media (min-width: 1024px) {
+    .banner {
+      left: 20%;
+      top: 50px; }
+    .banner h1 {
+        font-size: 64px; }
+    .banner p {
+        width: 628px;
+        height: 48px; }
+    .banner .buttonc {
+        width: 226px;
+        height: 56px;
+        margin-left: 20%; } }
+
+.sobremi {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    max-width: 100%;
+    background-image: linear-gradient(225deg, #298E77 0%, #2DE3BA 100%);
+    background-image: -webkit-linear-gradient(225deg, #298E77 0%, #2DE3BA 100%);
+    background-image: -o-linear-gradient(225deg, #298E77 0%, #2DE3BA 100%);
+    background-image: -moz-linear-gradient(225deg, #298E77 0%, #2DE3BA 100%);
+    margin-top: 25px;
+    padding-bottom: 250px;
+    position: relative; 
+}
+
+.sobremi .iframe {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-self: center; 
+}
+
+.sobremi iframe {
+    margin-bottom: 11px;
+    height: 155px;
+    border: none; 
+}
+
+.sobremi h2 {
+    margin-top: 20%;
+    margin-left: 10px;
+    padding-bottom: 21px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-transform: unset;
+    font-size: 36px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 42px; 
+}
+
+
+.mas {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 0px;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.mas h2 {
+    font-family: IBM Plex Sans, sans-serif;
+    font-size: 36px;
+    color:#060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+    text-align: center;
+    padding-top: 100px;
+    font-weight: 100; 
+}
+
+.button-two {
+    background: #298E77;
+    display: block;
+    font-family: IBM Plex Mono, monospace;
+    font-size: 16px;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    width: 90%;
+    height: 48px;
+    padding-top: 15px;
+    margin-top: 36px;
+    margin-left: 50%;
+    transform: translate(-50%); 
+}
+
+.entrevistas {
+    width: 100%;
+    margin-top: 5%;
+    
+}
+
+.entrevistas h2 {
+    font-family: IBM Plex Sans, sans-serif;
+    font-size: 36px;
+    color:#060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    font-weight: 100;
+}
+
+.entrevistas .image {
+    
+    display: grid; 
+    grid-template-rows: repeat(3, 150px);
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 170px;
+    column-gap: 10px;
+    
+}
+
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 20px;
+    text-align: center;
+    font-family: IBM Plex Mono, monospace;
+    font-size: 14px;
+    color: #060A24;
+    letter-spacing: 0px;
+    line-height: 22px; 
+}
+
+.sociales {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.sociales a {
+    color: black; 
+}
+
+      
